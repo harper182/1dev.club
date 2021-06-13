@@ -2,4 +2,4 @@
   HUGO_VERSION = "0.69.0"
 [build]
   publish = "public"
-  command = "hugo server"
+  command = "hugo"
