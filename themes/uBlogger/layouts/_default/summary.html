@@ -24,7 +24,7 @@
             </div>
             {{- end -}}
             {{- end -}}
-            <a href="{{ $.RelPermalink }}" target="_blank">
+            <a href="{{ $.RelPermalink }}" target="_self">
                 {{- dict "Src" . "Title" $.Description "Resources" $.Resources "Height" 798 "Width" 238 | partial "plugin/image.html" -}}
             </a>
         </div>
@@ -33,7 +33,7 @@
     <div class="article-text">
         {{- /* Title */ -}}
         <h2 class="summary-title" itemprop="name headline">
-            <a href="{{ $.RelPermalink }}" target="_blank">{{ .Title }}</a>
+            <a href="{{ $.RelPermalink }}" target="_self">{{ .Title }}</a>
         </h2>
 
         {{- if not $params.summaryStyle.hiddenMeta -}}
